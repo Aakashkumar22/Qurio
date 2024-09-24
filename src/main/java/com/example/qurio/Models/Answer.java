@@ -19,7 +19,7 @@ public class Answer  extends  BaseModel{
     private User user;
 
 
-    @OneToMany(mappedBy = "answer")
+    @OneToMany(mappedBy = "commentAnswer")
     private Set<Comment> answerComments;
 
 
