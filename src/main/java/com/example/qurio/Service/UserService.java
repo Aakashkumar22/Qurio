@@ -1,7 +1,9 @@
 package com.example.qurio.Service;
 
 import com.example.qurio.DTOS.UserDto;
+import com.example.qurio.Models.Tags;
 import com.example.qurio.Models.User;
+import com.example.qurio.Respository.TagsRepository;
 import com.example.qurio.Respository.UserRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +17,15 @@ public class UserService {
     @Autowired
      private UserRepository userRepository;
 
+    @Autowired
+    private TagsRepository tagsRepository;
+
     public List<User>getAllUsers(){
        return userRepository.findAll();
+    }
+
+    public Optional<User> getUserbyId(long id){
+        return userRepository.findById(id);
     }
 
     public User createUser(UserDto  userdto){
@@ -49,5 +58,12 @@ public class UserService {
         catch (Exception e){
             return false;
         }
+    }
+
+    public void followTag(Long userId, Long tagId) {
+        User user = userRepository.findById(userId).orElseThrow(() -> new RuntimeException("User not found"));
+        Tags tag = tagsRepository.findById(tagId).orElseThrow(() -> new RuntimeException("Tag not found"));
+        user.getFollwedTags().add(tag);
+        userRepository.save(user);
     }
 }
