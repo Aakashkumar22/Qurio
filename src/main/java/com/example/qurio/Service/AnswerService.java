@@ -26,7 +26,7 @@ public class AnswerService {
     @Autowired
     UserRepository userRepository;
 
-    public List<Answer> getAnswersByQuestionId(Long questionId, int page, int size) {
+    public List<Answer> findByQuestionId(Long questionId, int page, int size) {
         return answerRepository.findByQuestionId(questionId, PageRequest.of(page, size)).getContent();
     }
 

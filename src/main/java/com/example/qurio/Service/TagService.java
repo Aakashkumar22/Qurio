@@ -27,7 +27,7 @@ public class TagService {
         return tagsRepository.save(tag);
     }
 
-    public Optional<Tags> getagbyId(Long id){
+    public Optional<Tags> getTagById(Long id){
         return tagsRepository.findById(id);
     }
 }
