@@ -25,6 +25,9 @@ public class QuestionService {
     @Autowired
     TagsRepository tagsRepository;
 
+    @Autowired
+    QuestionIndexService questionIndexService;
+
     public Optional<Question> getquestionbyId(Long id){
         return questionRepository.findById(id);
     }
@@ -37,6 +40,7 @@ public class QuestionService {
             Question question = new Question();
             question.setContext(questionDto.getContext());
             question.setTitle(questionDto.getTitle());
+            question.setId(questionDto.getId());
 
             // Find user by ID
             Optional<User> user = userRepository.findById(questionDto.getUserId());
@@ -50,6 +54,7 @@ public class QuestionService {
                     .collect(Collectors.toSet());
 
             question.setQuestiontags(tags);
+            questionIndexService.indexService(question);
 
             return questionRepository.save(question);
         }
