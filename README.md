@@ -1,10 +1,10 @@
 # ❓💬 Qurio Platform Project
 
-## High-Performance Question-and-Answer Platform
+## High-Performance Query-and- Responsive Answer Platform
 **Technologies**: **Java**, **Spring Boot**, **Elasticsearch**, **Docker**, **MySQL**,
 
 ## Project Overview
-**Engineered** a high-performance query-and-answer platform designed to **scale** efficiently, accommodating **100,000+** questions and answers while ensuring **99.99% uptime**.
+**Engineered** a high-performance Dynamic query-and- Responsive Dynamic answer platform designed to **scale** efficiently, accommodating **100,000+** questions and answers while ensuring **99.99% uptime**.
 
 ## 🌟 Unique Features of the Project
 - **Elasticsearch Optimization:** The integration of **Elasticsearch** has drastically reduced search query response times by **80%**, enabling users to retrieve highly relevant search results in under **200 milliseconds**. This enhancement not only speeds up the search experience but also encourages users to engage more with the platform. The **40% reduction** in indexing times ensures that new questions and answers become immediately searchable, providing users with instant access to the latest content.
