@@ -1,4 +1,6 @@
 # ❓💬 Qurio Platform 
+ <p align="center" > <img width=500,height=500 src=https://github.com/user-attachments/assets/f7296e13-7864-4215-9155-f6b54ef26eeb /> </p>
+ <p align="center" ><img src=https://github.com/user-attachments/assets/db7d2384-9d26-4b39-aa29-4abddc7d5005/> </p>
 
 ## High-Performance Query-and- Responsive Answer Platform
 **Technologies**: **Java**, **Spring Boot**, **Elasticsearch**, **Docker**, **MySQL**,
