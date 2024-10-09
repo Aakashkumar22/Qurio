@@ -1,4 +1,4 @@
-# ❓💬 Qurio Platform Project
+# ❓💬 Qurio Platform 
 
 ## High-Performance Query-and- Responsive Answer Platform
 **Technologies**: **Java**, **Spring Boot**, **Elasticsearch**, **Docker**, **MySQL**,
