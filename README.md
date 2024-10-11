@@ -19,7 +19,7 @@
 ## Key Achievements
 
 ### 🚀1. Scalability
-- **Engineered** a high-performance platform that successfully handles over **100,000 Dynamic questions and  Dynamic Responsive answers** with **99.99% uptime**.
+- **Engineered** a high-performance platform that successfully handles over **100,000 Dynamic Queries and Dynamic Responsive answers** with **99.99% uptime**.
 
 ### ⚡2. Search Optimization
 - **Spearheaded** the integration of **Elasticsearch**, slashing search query response time by **80%** and enabling users to find relevant questions in under **200 milliseconds**.
